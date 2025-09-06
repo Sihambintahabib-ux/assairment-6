@@ -21,11 +21,51 @@
 
 </head>
 
-<body class=" m-5 p-5 flex w-full flex-col justify-center items-center gap-3">
+<body class="">
+<!-- max-w-7xl mx-auto -->
+<header class="">
+  <nav class=" p-5 bg-green-500 | flex  gap-3 items-center justify-around text-center">
+    <div><h1>green forest</h1></div>
+    <div>
+      <ul class="flex gap-5 ">
+      <li><a href="#">home</a></li>
+      <li><a href="#">galary</a></li>
+      <li><a href="#">plant a tree</a></li>
+    </ul>
+  </div>
+    <div><button type="button">plant buy</button></div>
+  </nav>
+  <div class="hero | flex-wrap | bg-green-300  | flex flex-row justify-between items-center">
+     <!-- <img class=" w-96 | flex-1" src="B12A06-Green-Earth/assets/hero-leaf1.png" alt="" srcset=""> -->
+     <div class="hero-info | flex-1 | flex flex-col gap-3 items-center text-center ">
+      <h1 >Plant a Tree, Grow a Future</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias totam ipsam voluptatibus facere, enim ducimus a sunt asperiores quas voluptas!</p>
+      <button type="button">plant buy</button>
+     </div>
+    <!-- <img class="w-96 flex-1 " src="B12A06-Green-Earth/assets/hero-leaf2.png" alt="" srcset=""> -->
+  </div>
+</header> 
+<main class=" pt-10 flex justify-between  max-w-7xl mx-auto ">
 
-<h1 class="bg-purple-400 ">surge deployment successfull complete </h1>
-  <p>Type : surge , then enter wait until choose the file then again press enter to publish the file , thats it.</p> 
+  <div id="" class=" flex flex-col gap-3  ">
+    <h1 class="text-2xl font-semibold">categories</h1>
+    <ul id="categoryContainer" class="flex flex-col gap-2">
+     
+    </ul>
+  </div>
+  <div id="newsContainer" class="cards">
+    <h1>choose your trees</h1>
+    <div id="card"></div>
+  </div>
+  <div id="priceCartCards" class="">
+        <h1 class="text-1xl font-semibold">YOUR CART</h1>
+        <ul id="priceCartCard" class="flex flex-col gap-2">
+        
+        </ul>
+
+  </div>
+</main>
 </body>
-<script src="main.js"></script>
+<script src="code.js"></script>
 
 </html>
