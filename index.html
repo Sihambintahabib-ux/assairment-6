@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <!-- tailwind -->
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
   <!-- font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
@@ -22,6 +23,8 @@
 </head>
 
 <body class="">
+ 
+
   <!-- max-w-7xl mx-auto -->
 
   <!-- <a href="https://openapi.programming-hero.com/api/categories">home</a>
@@ -57,8 +60,12 @@
   <!-- flex flex-grow justify-between -->
   <main class=" bg-green-100 |   ">
 
-    <div class="main_heading">
-      <h1 class=" text-center font-extrabold "> your cardsContainer </h1>
+    <div class="main_heading pt-5 flex justify-center items-center hidden">
+      <!-- <h1 class=" text-center font-extrabold "> your cardsContainer </h1> -->
+      <!-- <span class="loading loading-bars loading-xl |"></span> -->
+      <span class="loading loading-spinner text-success"></span>
+
+
   
     </div>
     <!-- grid-cols-[800px , 300px , 200px] -->

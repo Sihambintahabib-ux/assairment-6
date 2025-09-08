@@ -555,6 +555,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, nesciun
         </div>
     `
 }
+
 // var one = 1
 loadCategory();
 // plantsByCategories("1")
