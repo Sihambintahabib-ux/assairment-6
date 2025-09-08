@@ -2,120 +2,140 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- tailwind -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- tailwind -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <!-- style css  -->
-    <link rel="stylesheet" href="style.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <!-- style css  -->
+  <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body class="">
-<!-- max-w-7xl mx-auto -->
-       
-<!-- <a href="https://openapi.programming-hero.com/api/categories">home</a>
+  <!-- max-w-7xl mx-auto -->
+
+  <!-- <a href="https://openapi.programming-hero.com/api/categories">home</a>
 <ul id="allCategories" >
   <li >all catagories</li>
   <li></li>
 </ul> -->
-<header class="">
-  <nav class=" p-5 bg-green-500 | flex  gap-3 items-center justify-around text-center">
-    <div><h1>green forest</h1></div>
-    <div>
-      <ul class="flex gap-5 ">
-      <li><a href="#">home</a></li>
-      <li><a href="#">galary</a></li>
-      <li><a href="#">plant a tree</a></li>
-    </ul>
-  </div>
-    <div><button type="button">plant buy</button></div>
-  </nav>
-  <div class="hero | flex-wrap | bg-green-300  | flex flex-row justify-between items-center">
-     <!-- <img class=" w-96 | flex-1" src="B12A06-Green-Earth/assets/hero-leaf1.png" alt="" srcset=""> -->
-     <div class="hero-info | flex-1 | flex flex-col gap-3 items-center text-center ">
-      <h1 >Plant a Tree, Grow a Future</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias totam ipsam voluptatibus facere, enim ducimus a sunt asperiores quas voluptas!</p>
-      <button type="button">plant buy</button>
-     </div>
-    <!-- <img class="w-96 flex-1 " src="B12A06-Green-Earth/assets/hero-leaf2.png" alt="" srcset=""> -->
-  </div>
-</header> 
-<!-- flex flex-grow justify-between -->
-<main class=" bg-green-100 |   ">
-
-  <div class="main_heading">
-            <h1 class=" text-center font-extrabold "> your cardsContainer </h1>
-
-  </div>
-  <!-- grid-cols-[800px , 300px , 200px] -->
-<div class=" max-w-7xl mx-auto | py-10 px-5  grid  gap-3   grid-cols-8
-  overflow-hidden ">
-
-
-
-
-  
-
-  <div id="" class=" flex flex-col   | col-span-1 |  bg-white shadow-2xl overflow-hidden   ">
-    <h1 class="text-xl font-semibold p-3 bg-gray-200 ">categories</h1>
-    <P id="allCategories">
-      <!-- <li >all catagories</li> -->
-      <!-- <li></li> -->
-    </P>
-    <ul id="categoryContainer" class="flex flex-col ">  
-    </ul>
-     
-
-
-
-
-
-
-    </ul>
-  </div>
-  <div id="cardsContainer" class="cards | box-border | outline outline-transparent rounded-xl  h-auto | col-span-5 | grid  gap-5 grid-cols-3  p-1 |  ">
-    <!-- <div id="allCategories"></div> -->
-    <!-- <div id="acc"></div> -->
-  </div>
-  <!-- <div class="cc">
-    <div class=' flex flex-col justify-between  border bg-red-500 border-gray-200 rounded p-0 m-0  '>
-      <div class='w-full'>
-        <img class=" w-max h-auto " src="B12A06-Green-Earth/assets/about.png" alt="">
+  <header class="">
+    <nav class=" p-5 bg-green-500 | flex  gap-3 items-center justify-around text-center">
+      <div>
+        <h1>green forest</h1>
       </div>
-      <div class='w-full '> 
-    
-        <h1>${plant.name}</h1>
-        <p>${plant.description}</p>
-        <div class='flex flex-row justify-between'>
-          <span>${plant.category}</span>
-          <span>${plant.price}</span>
-        </div>
-        <button type="button">Add to Cart button</button>
+      <div>
+        <ul class="flex gap-5 ">
+          <li><a href="#">home</a></li>
+          <li><a href="#">galary</a></li>
+          <li><a href="#">plant a tree</a></li>
+        </ul>
       </div>
+      <div><button type="button">plant buy</button></div>
+    </nav>
+    <div class="hero | flex-wrap | bg-green-300  | flex flex-row justify-between items-center">
+      <!-- <img class=" w-96 | flex-1" src="B12A06-Green-Earth/assets/hero-leaf1.png" alt="" srcset=""> -->
+      <div class="hero-info | flex-1 | flex flex-col gap-3 items-center text-center ">
+        <h1>Plant a Tree, Grow a Future</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias totam ipsam voluptatibus facere, enim ducimus
+          a sunt asperiores quas voluptas!</p>
+        <button type="button">plant buy</button>
+      </div>
+      <!-- <img class="w-96 flex-1 " src="B12A06-Green-Earth/assets/hero-leaf2.png" alt="" srcset=""> -->
     </div>
-  </div> -->
-   <div id="priceCartCards" class=" col-span-2   |  px-5 py-3  bg-white shadow-2xl overflow-hidden ">
+  </header>
+  <!-- flex flex-grow justify-between -->
+  <main class=" bg-green-100 |   ">
+
+    <div class="main_heading">
+      <h1 class=" text-center font-extrabold "> your cardsContainer </h1>
+  
+    </div>
+    <!-- grid-cols-[800px , 300px , 200px] -->
+    <!-- grid gap-3 grid-cols-8 -->
+    <div class="  min-w-full mx-auto | flex  sm:flex-row flex-col  | py-10 px-5 gap-2 
+  overflow-hidden ">
+      <!-- card nav name  -->
+      <div id="" class=" flex flex-col w-[15%] | col-span-1 |   overflow-hidden   ">
+        <h1 class="text-xl font-semibold p-3 ">categories</h1>
+        <P id="allCategories"> </P>
+        
+        <!-- card nav name  -->
+        <ul id="categoryContainer" class="flex flex-col      ">
+        </ul>
+
+
+
+
+      </div>
+      <!-- cards Container -->
+      <div id="cardsContainer"
+        class="cards | box-border | outline outline-transparent rounded-xl  h-auto w-[65%] |  | grid  gap-5 grid-cols-1 sm:grid-cols-3  p-1 |  ">
+
+<!-- <div></div>
+        <div id="spin  " class=" border-white w-1   bg-red-500  ">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, nesciunt?
+        </div>
+<div></div> -->
+
+      </div>
+      <!-- price cards -->
+      <!-- <div id="priceCartCards" class="   | flex-1 px-5 py-3  bg-white shadow-2xl overflow-hidden ">
         <h1 class="text-1xl font-semibold">YOUR CART</h1>
         <ul id="priceCartCard" class="flex flex-col gap-2">
-        <li>hello</li>
-        <li>hello</li>
+        
+        
+          <li class="bg-green-100 p-3 m-1 rounded-sm ">
+          <p class="text-lg font-semibold ">Name</p>
+          <p class="flex justify-between">
+            <span class="font-light text-sm ">200</span>
+            <span>*</span>
+          </p>
+        </li>
 
         </ul>
 
-  </div> 
-  </div>
-</main>
+  </div> -->
+      <div id="priceCartCards" class=" w-[15%]  ">
+        <h1 class="text-1xl font-semibold p-2 ">YOUR CART</h1>
+        <ul id="pricelist" class="flex flex-col gap-2  ">
+<!--           
+          <div class="border my-2 p-1">
+                <h1>${price.title}</hi>
+                <h1>${price.price}</hi>
+            </div> -->
+
+
+          <!-- <li class="bg-green-100 p-4 m-1 rounded-sm ">
+            <p class="text-lg font-semibold ">Name</p>
+            <p class="flex justify-between">
+              <span class="font-light text-sm ">200</span>
+              <span>*</span>
+            </p>
+          </li> -->
+        </ul>
+
+
+        <div id="totalpricecontainer" class="bg-white p-2 m-1 rounded-sm ">
+          <p class="flex justify-between">
+            <span class="font-semibold text-base ">Total : </span>
+            <span id="totalprice">0</span>
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </main>
 </body>
 <script src="code.js"></script>
 
