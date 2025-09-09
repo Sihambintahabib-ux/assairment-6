@@ -26,8 +26,6 @@ var handleprices = (e) => {
     showprice(prices);
 }
 
-
-
 var showprice = (prices) => {
     pricelist.innerHTML = "";
     prices.forEach(price => {
@@ -40,32 +38,8 @@ var showprice = (prices) => {
               ('${price.id}')" class=' btn btn-xm' >delete</button>
             </p>
           </li>  
-            `
-        
-
-    })
-
-    totalprice = prices.length
-    totalprice = prices.innerText + totalprice
-    console.log(totalprice);
-
-
-
-    var totalprice = document.getElementById("totalprice").innerText;
-    var totalpriceConverted = Number(totalprice)
-    // console.log(typeof (priceConverted), priceConverted);
-    console.log(typeof (totalpriceConverted), totalpriceConverted);
-
-    totalprice = totalpriceConverted + 5;
-    console.log(totalprice);
-
-
-
-
-}
-// var totalprice = document.getElementById("totalprice"),
-
-// totalprice += price ;
+            `  })
+        }
 
 var handledeletePrices = (pi) => {
     console.log(pi);
@@ -75,31 +49,6 @@ var handledeletePrices = (pi) => {
     console.log(filteredPrices);
     showprice(prices);
 }
-
-
-
-// var price = e.target.parentNode.parentNode.childNodes[3].childNodes[3].innerHTML ; 
-
-// var deletprice = document.getElementById('deletprice')
-// // price.classList.add('delete');
-// console.log(price);
-// deletprice.addEventListener("click" , 
-//     ()=>{
-
-//     }
-// )
-
-// var handleprices = ()=> {
-
-// }
-
-
-
-
-
-
-
-// card desing 
 
 //fetch data - catagories list
 var loadCategory = () => {
@@ -115,11 +64,8 @@ var loadCategory = () => {
         })
 }
 
-
-// //allcategories
 // Select the button element
 const allButton = document.getElementById('allCategories');
-
 //fetch data - all plants
 var loadallCategory = () => {
     // showloading(true);
@@ -135,10 +81,6 @@ var loadallCategory = () => {
             console.log(err);
         })
 }
-
-
-
-
 var CardDesing = (plants) => {
     cardsContainer.innerHTML = "";
     cardsContainer.innerHTML +=
@@ -171,16 +113,6 @@ var CardDesing = (plants) => {
           `
 
 }
-
-
-// plants.forEach(plant => {
-//     // console.log(plant);
-
-//     CardDesing(plant);
-
-// })
-
-
 showallCategory = (plants) => {
     // console.log(plants);
     // console.log(plants.id);
@@ -277,17 +209,7 @@ showallCategory = (plants) => {
 
 }
 
-// Add a click event listener
-
-
-
-
-
-
 loadallCategory();
-
-
-
 
 //name
 showCategory = (categories) => {
@@ -328,7 +250,6 @@ const plantsByCategories = (plantID) => {
         })
 
 }
-
  //model
 var showModal =(id)=> {
     var url = `https://openapi.programming-hero.com/api/plant/${id}`
@@ -406,7 +327,6 @@ class=" text-1xl font-semibold mb-1 ">${plant.name}</button>
     )
 }
 
-
 var showloading =(status)=>{
     if (status ===true) {
         document.getElementById("spinner").classList.remove("hidden")
@@ -417,7 +337,6 @@ var showloading =(status)=>{
         document.getElementById("spinner").classList.add("hidden")
     }
 }
-
 // showloading(true);
 // showloading(false);
 
