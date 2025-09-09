@@ -61,6 +61,6 @@
 <!-- questaing  -->
 <!-- ftp://192.168.1.5:2221 -->
 
-GitHub Repository : https://github.com/Sihambintahabib-ux/assairment-5.git
- <br> Live Link : https://sihambintahabib-ux.github.io/assairment-5/
+GitHub Repository : https://github.com/Sihambintahabib-ux/assairment-6.git
+ <br> Live Link : http://sihambintahabib-assairment.surge.sh/
  
