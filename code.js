@@ -47,21 +47,11 @@ var showprice = (prices) => {
           </li>  
             `
         total += parseInt(price.price)
-
-    
-
-
     })
     totalprice.innerHTML += `<span class="font-light text-sm ">${total}</span>`
 
 
-    // prices.forEach(price => {
-    //     // totalprice += price.price;
-    // totalprice.innerHTML += `<span class="font-light text-sm ">${price.price}</span>
-    //         `  })
-
-
-    // totalprice.innerHTML += price
+   
 
 }
 
