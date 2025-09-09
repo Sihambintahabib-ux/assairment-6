@@ -1,6 +1,12 @@
 ### QUESTION  
+1) What is the difference between var, let, and const?
+2) What is the difference between map(), forEach(), and filter()?
+3) What are arrow functions in ES6?
+4) How does destructuring assignment work in ES6?
+5) Explain template literals in ES6. How are they different from string concatenation?
 
-### 1. What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
+### ANSEWER
+### What is the difference between var, let, and const?
 
 - getElementById : only use to select  html tag by **ID**
 - getElementsByClassName : only use to select  html tag by **class**
@@ -8,19 +14,19 @@
 - querySelectorAll : Selects **all** element that matches a specified CSS selector
 ---
 
-### 2. How do you create and insert a new element into the DOM?
+### What is the difference between map(), forEach(), and filter()?
 
 - create : Use  **.createElement()** method to create a new HTML element.
 - insert : **appendChild()**  method help to adds the new element to parent element.
 ---
 
-### 3. What is Event Bubbling and how does it work?
+### What are arrow functions in ES6?
 
 - When an event happens on an element, it first runs the handlers on it, then on its parent, then all the way up on other ancestors.
 - in simple words , instead of selecting all child , selecting parent for better output is known as **enent bubbling**
 ---
 
-### 4. What is Event Delegation in JavaScript? Why is it useful?
+### How does destructuring assignment work in ES6?
 
 - Event Delegation : used to manage and handle events on multiple child elements by attaching a single event listener to a common ancestor element.
 ### uses of Event Delegation : 
@@ -31,19 +37,13 @@
 
 ---
 
-### 5. What is the difference between preventDefault() and stopPropagation() methods?
+### Explain template literals in ES6. How are they different from string concatenation?
 
 - **preventDefault()** : deals with the default behavior of the event.
 - **stopPropagation()** : deals with the propagation (flow) of the event through the DOM.
 
 ---
  
-<!-- 
-I have a card with some text and a button inside it. I want that when a user clicks the button, some specific text from the card is copied to the clipboard using JavaScript. Please provide the code and explain it step by step. :
- a) On clicking the **Copy button**, show an alert and **increase the copy count**  
-
--  b) Hotline number will be **copied on click** so it can be pasted anywhere  
- -->
 
 <!-- questaing  -->
 <!-- ftp://192.168.1.5:2221 -->
