@@ -7,41 +7,54 @@
 
 ### ANSEWER
 ### What is the difference between var, let, and const?
+**DESCRIPTION :** var is a tradition a tradion way to declare a variable while let and const is introducer in ES6 . 
+#### **VAR :** 
+1. Old and risky
+2. Scoped to functions, not blocks
+3. Can be redeclared and reassigned
+4. Hoisted to the top with undefined value
+#### **let :** 
+ 1. Modern and safe
+ 2. Scoped to blocks ( {} )
+3. Can be reassigned but not redeclared
+4. Hoisted, but stays in the Temporal Dead Zone (TDZ)
+#### **const :** 
+1. Constant values
+2. Scoped to blocks
+3. Cannot be reassigned or redeclared
+4. Value must be assigned at declaration
+5. Temporal Dead Zone (TDZ) applies here too
 
-- getElementById : only use to select  html tag by **ID**
-- getElementsByClassName : only use to select  html tag by **class**
-- querySelector : Selects the **first** element that matches a specified CSS selector
-- querySelectorAll : Selects **all** element that matches a specified CSS selector
 ---
 
 ### What is the difference between map(), forEach(), and filter()?
+#### **map() :**
+- map() transforms each element and returns a new array of the same length.
+#### **filter() :**
+- filter() selects elements that meet a specified condition and returns a new array that may be shorter.
+#### **forEach() :**
+- forEach() simply iterates through each element to perform an action, and it returns undefined
 
-- create : Use  **.createElement()** method to create a new HTML element.
-- insert : **appendChild()**  method help to adds the new element to parent element.
 ---
 
 ### What are arrow functions in ES6?
+#### **arrow functions :**
+- Short, concise functions and "one-liners" that need an implicit return.
+- No own this , no arguments object
+- Cleaner syntax 
+- syntax : `() => "Hello World" `
 
-- When an event happens on an element, it first runs the handlers on it, then on its parent, then all the way up on other ancestors.
-- in simple words , instead of selecting all child , selecting parent for better output is known as **enent bubbling**
 ---
 
 ### How does destructuring assignment work in ES6?
-
-- Event Delegation : used to manage and handle events on multiple child elements by attaching a single event listener to a common ancestor element.
-### uses of Event Delegation : 
- 1. Improved Performance and Reduced Memory Usage
-2. Cleaner and More Maintainable Code
-3. Easy accesable of the code
-
+- destructuring a new feature introduce in es6 
+- a new way to access value from array(array destructuring) and object(object destructuring)
 
 ---
 
 ### Explain template literals in ES6. How are they different from string concatenation?
-
-- **preventDefault()** : deals with the default behavior of the event.
-- **stopPropagation()** : deals with the propagation (flow) of the event through the DOM.
-
+- provide a more powerful and flexible way to work with strings than traditional concatenation. They are enclosed by backticks (`) instead of single or double quotes.
+- syntax of writing function in template literals : `${}`
 ---
  
 
