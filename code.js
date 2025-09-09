@@ -14,7 +14,7 @@ cardsContainer.addEventListener("click", (e) => {
 })
 
 var handleprices = (e) => {
-    var id = e.target.parentNode.parentNode.childNodes[1].id  
+    var id = e.target.parentNode.parentNode.childNodes[1].id
     var title = e.target.parentNode.parentNode.childNodes[1].childNodes[1].innerText
     var price = e.target.parentNode.parentNode.childNodes[3].childNodes[3].innerText
     console.log(typeof (price));
@@ -35,11 +35,14 @@ var showprice = (prices) => {
             <p class="flex justify-between">
               <span class="font-light text-sm ">${price.price}</span>
               <button onclick="handledeletePrices
-              ('${price.id}')" class=' btn btn-xm' >delete</button>
+              ('${price.id}')" class=' btn btn-xm' >
+              <i class="fa fa-trash" aria-hidden="true"></i>
+
+              </button>
             </p>
           </li>  
             `  })
-        }
+}
 
 var handledeletePrices = (pi) => {
     console.log(pi);
@@ -52,12 +55,14 @@ var handledeletePrices = (pi) => {
 
 //fetch data - catagories list
 var loadCategory = () => {
+    // showloading(true);
     fetch("https://openapi.programming-hero.com/api/categories")
         .then(res => res.json())
         .then(data => {
             // console.log(data.categories);
             var categories = data.categories;
             showCategory(categories)
+            // showloading(true);
         })
         .catch((err) => {
             console.log(err);
@@ -68,14 +73,14 @@ var loadCategory = () => {
 const allButton = document.getElementById('allCategories');
 //fetch data - all plants
 var loadallCategory = () => {
-    // showloading(true);
-
+    showloading(true);
     fetch("https://openapi.programming-hero.com/api/plants")
         .then(res => res.json())
         .then(data => {
             // console.log(data.plants);
             var plants = data.plants;
             showallCategory(plants);
+            showloading(false);
         })
         .catch((err) => {
             console.log(err);
@@ -114,19 +119,11 @@ var CardDesing = (plants) => {
 
 }
 showallCategory = (plants) => {
-    // console.log(plants);
-    // console.log(plants.id);
-
     allButton.innerHTML = "";
-    allButton.innerHTML = `<li id="" class="allCategories | px-5 py-3 hover:bg-green-200 bg-green-200 cursor-pointer ">all catagories</li> `
-
+    allButton.innerHTML = `<li id="" class="allCategories | px-3 py-3 hover:bg-green-200 bg-green-200 cursor-pointer ">All Catagories</li> `
     plants.forEach(plant => {
-        // console.log(plant);
-
-        // CardDesing(plant);
-
         cardsContainer.innerHTML +=
-            `        <div id='cardparent' class="cc  ">
+            `<div id='cardparent' class="cc">
     <div class=' bg-white shadow-2xl overflow-hidden |  flex flex-col gap-0 justify-between border border-gray-200 rounded-lg p-2 m-0  '>
       <div class='w-full h-[40%]'>
         <img class=" w-full h-50 | outline outline-transparent rounded-md
@@ -208,9 +205,6 @@ showallCategory = (plants) => {
     });
 
 }
-
-loadallCategory();
-
 //name
 showCategory = (categories) => {
     categories.forEach(cat => {
@@ -236,7 +230,7 @@ showCategory = (categories) => {
 const plantsByCategories = (plantID) => {
     // console.log(plantID);
 
-    
+
     fetch(`https://openapi.programming-hero.com/api/category/${plantID}`)
         .then(res => res.json())
         .then(data => {
@@ -250,8 +244,8 @@ const plantsByCategories = (plantID) => {
         })
 
 }
- //model
-var showModal =(id)=> {
+//model
+var showModal = (id) => {
     var url = `https://openapi.programming-hero.com/api/plant/${id}`
     console.log(url);
 
@@ -259,18 +253,18 @@ var showModal =(id)=> {
         .then(res => res.json())
         .then(data => {
             displaymodelDetails(data.plants);
-            
+
         })
         .catch((err) => {
             console.log(err);
         })
 
 }
-var displaymodelDetails = (data) =>{
+var displaymodelDetails = (data) => {
     console.log(data);
     var text = document.getElementById("text");
     //  text.innerHTML = 'helo text';
-     text.innerHTML = `
+    text.innerHTML = `
 
      <h3 class="text-lg p-2  rounded-sm bg-green-200 font-bold">${data.name}</h3>
 <img class=" w-2/4 h-50 | outline outline-transparent rounded-md
@@ -310,7 +304,7 @@ const showCardsByCategories = (plants) => {
 class=" text-1xl font-semibold mb-1 ">${plant.name}</button>
         <p class=" text-sm font-light ">${plant.description}</p>
                 </div>
-        <div class='flex flex-row justify-between'>
+        <div class='flex md:flex-row flex-col-reverse   justify-between'>
           <span class="text-sm font-light | outline rounded-lg bg-green-200 outline-transparent w-fit text-center px-3 py-2 " >${plant.category}</span>
           <span>${plant.price}</span>
         </div>
@@ -323,12 +317,12 @@ class=" text-1xl font-semibold mb-1 ">${plant.name}</button>
           `
 
     }
-    // hidden
+        // hidden
     )
 }
 
-var showloading =(status)=>{
-    if (status ===true) {
+var showloading = (status) => {
+    if (status === true) {
         document.getElementById("spinner").classList.remove("hidden")
         document.getElementById("cardsContainer").classList.add("hidden")
     } else {
@@ -340,4 +334,5 @@ var showloading =(status)=>{
 // showloading(true);
 // showloading(false);
 
+loadallCategory();
 loadCategory();

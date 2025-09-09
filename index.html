@@ -24,7 +24,7 @@
 
 <body class="">
   <header class="">
-    <nav class=" p-5 bg-green-500 | flex  gap-3 items-center justify-around text-center">
+    <!-- <nav class=" p-5 bg-green-500 | flex  gap-3 items-center justify-around text-center">
       <div>
         <h1>green forest</h1>
       </div>
@@ -36,49 +36,99 @@
         </ul>
       </div>
       <div><button type="button">plant buy</button></div>
-    </nav>
+    </nav> -->
+
+
+    <!-- navbar -->
+<nav class="bg-green-700 p-4">
+  <div class="container mx-auto flex items-center justify-between">
+    <div class="text-white text-2xl font-bold">Green Earth</div>
+    <div class="hidden md:flex space-x-6">
+      <a href="#" class="text-green-200 hover:text-white">About</a>
+      <a href="#" class="text-green-200 hover:text-white">Gallery</a>
+      <a href="#" class="text-green-200 hover:text-white">Plant a Tree</a>
+    </div>
+    <button class="bg-yellow-500 text-green-800 font-semibold py-2 px-4 rounded-full shadow-lg hover:bg-yellow-400">
+      Plant a Tree
+    </button>
+  </div>
+</nav>
+
+
+    <!-- hero section  -->
+    <div class="bg-green-100 py-16 flex flex-col items-center justify-center relative overflow-hidden">
+  <!-- Left Palm Leaf -->
+  <img src="B12A06-Green-Earth/assets/hero-leaf1.png" alt="Palm Leaf" class="hidden md:block absolute left-0 top-1/2 -translate-y-1/2 h-full object-cover">
+  <!-- Right Palm Leaf -->
+  <img src="B12A06-Green-Earth/assets/hero-leaf1.png" alt="Palm Leaf" class=" hidden md:block absolute right-0 top-1/2 -translate-y-1/2 h-full object-cover transform scale-x-[-1]">
+
+  <div class="text-center z-10 px-4">
+    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Plant a Tree, Grow a Future</h1>
+    <p class="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
+      Join our mission to plant 1 million trees and make the Earth greener for future generations.
+    </p>
+    <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out">
+      Get Involved
+    </button>
+  </div>
+</div>
+<!-- 2ndhero -->
+
+
+
+
+
+
+
+
+<!-- 
     <div class="hero | flex-wrap | bg-green-300  | flex flex-row justify-between items-center">
-      <!-- <img class=" w-96 | flex-1" src="B12A06-Green-Earth/assets/hero-leaf1.png" alt="" srcset=""> -->
+      <img class=" w-96 | flex-1" src="B12A06-Green-Earth/assets/hero-leaf1.png" alt="" srcset="">
+
+
       <div class="hero-info | flex-1 | flex flex-col gap-3 items-center text-center ">
+
+        <img src="/B12A06-Green-Earth/assets/Group 6.png" class="w-full " alt="">
+        <div class="bg-[url('./B12A06-Green-Earth/assets/Group 6.png')] w-full  bg-cover bg-center bg-no-repeat">hgj</div>
+
+
         <h1>Plant a Tree, Grow a Future</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias totam ipsam voluptatibus facere, enim ducimus
           a sunt asperiores quas voluptas!</p>
         <button type="button">plant buy</button>
       </div>
-      <!-- <img class="w-96 flex-1 " src="B12A06-Green-Earth/assets/hero-leaf2.png" alt="" srcset=""> -->
-    </div>
+      <img class="w-96 flex-1 " src="B12A06-Green-Earth/assets/hero-leaf2.png" alt="" srcset="">
+    </div> -->
+
+
+
+
+
+
   </header>
   
   <main class=" bg-green-100 |   ">
 
     <div id="spinner" class="pt-5 flex  justify-center items-center hidden ">
-      <span class="loading loading-spinner text-success"></span>
-<div id="hello">
-
-</div>
-
-  
+      <span class="loading loading-bars loading-xl text-success"></span>
+<div id="hello"></div>  
     </div>
+
     <!-- grid-cols-[800px , 300px , 200px] -->
     <!-- grid gap-3 grid-cols-8 -->
-    <div class="  min-w-full mx-auto | flex  sm:flex-row flex-col  | py-10 px-5 gap-2 
+    <div class="  min-w-full mx-auto | flex   md:flex-row flex-col  | py-10 px-5 gap-2 
   overflow-hidden ">
       <!-- card nav name  -->
-      <div id="" class=" flex flex-col w-[15%] | col-span-1 |   overflow-hidden   ">
+      <div id="" class=" flex flex-col md:w-[15%] | col-span-1 |   overflow-hidden   ">
         <h1 class="text-xl font-semibold p-3 ">categories</h1>
         <P id="allCategories"> </P>
-        
         <!-- card nav name  -->
-        <ul id="categoryContainer" class="flex flex-col      ">
+        <ul id="categoryContainer" class="flex flex-row md:flex-col flex-wrap  justify-around md:justify-normal   ">
         </ul>
-
-
-
-
       </div>
       <!-- cards Container -->
       <div id="cardsContainer"
-        class="cards | box-border | outline outline-transparent rounded-xl  h-auto w-[65%] |  | grid  gap-5 grid-cols-1 sm:grid-cols-3  p-1 |  ">
+        class="cards | box-border | outline outline-transparent rounded-xl  h-auto md:w-[65%] |  | grid  gap-5 grid-cols-1 sm:grid-cols-3  p-1 |  ">
 
 <!-- <div></div>
         <div id="spin  " class=" border-white w-1   bg-red-500  ">
@@ -104,7 +154,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, nesciun
         </ul>
 
   </div> -->
-      <div id="priceCartCards" class=" w-[15%]  ">
+      <div id="priceCartCards" class=" md:w-[15%]  ">
         <h1 class="text-1xl font-semibold p-2 ">YOUR CART</h1>
         <ul id="pricelist" class="flex flex-col gap-2  ">
 <!--           
@@ -134,6 +184,115 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, nesciun
       </div>
     </div>
   </main>
+
+
+
+<!-- champion section -->
+<section>
+<h1 class="text-3xl font-bold text-gray-800 p-8 mb-6 text-center sm:text-left md:text-center ">About the Campaign</h1>
+  <div class="bg-white p-8 rounded-lg shadow-lg max-w-4xl mx-auto flex flex-col md:flex-row items-center">
+    <!-- Image Section -->
+    <div class="md:w-1/2 flex justify-center mb-6 md:mb-0 md:mr-8">
+      <img src="B12A06-Green-Earth/assets/about.png" alt="Green Plant" class="rounded-lg max-h-96 object-cover">
+    </div>
+  
+    <!-- Content Section -->
+    <div class="md:w-1/2">
+      <p class="text-gray-700 leading-relaxed mb-4">
+        Green Earth is a global tree plantation initiative dedicated to fighting climate change. Since our start, we've
+        planted over 500,000 trees worldwide. By joining our campaign, you help restore forests, create habitats for
+        wildlife, and combat global warming.
+      </p>
+      <ul class="list-disc list-inside text-gray-700 space-y-2">
+        <li>Restoration of natural habitats</li>
+        <li>Improvement of air quality</li>
+        <li>Support for local communities</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- impact -->
+<div class="bg-green-100 p-8 text-center">
+  <h2 class="text-2xl font-semibold text-gray-800 mb-8">Our Impact</h2>
+  <div class="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-8">
+    <!-- Impact Card 1 -->
+    <div class="bg-white p-6 rounded-lg shadow-md w-72">
+      <p class="text-3xl font-bold text-green-700 mb-2">500K+</p>
+      <p class="text-gray-600">Trees Planted</p>
+    </div>
+
+    <!-- Impact Card 2 -->
+    <div class="bg-white p-6 rounded-lg shadow-md w-72">
+      <p class="text-3xl font-bold text-green-700 mb-2">120+</p>
+      <p class="text-gray-600">Communities Involved</p>
+    </div>
+
+    <!-- Impact Card 3 -->
+    <div class="bg-white p-6 rounded-lg shadow-md w-72">
+      <p class="text-3xl font-bold text-green-700 mb-2">30+</p>
+      <p class="text-gray-600">Countries Reached</p>
+    </div>
+  </div>
+</div>
+
+<!-- price -->
+<section class="bg-green-800 flex flex-col items-center justify-center min-h-screen">
+<div class="">
+  <h2 class="text-white text-3xl font-bold mb-6 text-center">Plant a Tree Today</h2>
+  <!-- Form fields will go here -->
+
+</div>
+<div class="bg-green-700 flex flex-col items-center justify-center  p-8 rounded-lg shadow-lg w-[50%]">
+
+
+  <div class="mb-4 w-[100%] ">
+    <label for="name" class="block  text-white text-sm font-bold mb-2">Your Name</label>
+    <input type="text" id="name"
+      class="bg-white shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+      placeholder="Your Name">
+  </div>
+  <div class="mb-4 w-[100%] ">
+    <label for="email" class="block text-white text-sm font-bold mb-2">Your Email Address</label>
+    <input type="email" id="email"
+      class="bg-white shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+      placeholder="Your Email Address">
+  </div>
+  <div class="mb-6 w-[100%] ">
+    <label for="trees" class="block text-white text-sm font-bold mb-2">Number of Trees</label>
+    <div class="relative">
+      <select placeholder="Your Email Address" id="trees"
+        class=" block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline text-gray-700">
+        <option placeholder="Your Email Address">1</option>
+        <option>5</option>
+        <option>10</option>
+        <option>20</option>
+        <option>50</option>
+      </select>
+      <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+          <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+        </svg>
+      </div>
+    </div>
+  </div>
+<div class="w-[100%] flex items-center justify-center">
+                <button type="submit"
+                  class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-6 rounded-full focus:outline-none focus:shadow-outline w-full">
+                  Donate Now
+                </button>
+              </div>
+</div>
+</section>
+
+<footer class="w-full bg-green-900 py-4 text-center text-green-300 text-sm">
+  <p>&copy; 2025 Green Earth. All Rights Reserved.</p>
+</footer>
+
+
+
+
+
 
   <!-- Open the modal using ID.showModal() method -->
   <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->

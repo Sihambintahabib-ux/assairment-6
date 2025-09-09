@@ -3,3 +3,4 @@
 - DOWNLOAD SURGE : npm install --global surge .
 - Type : surge , then enter wait until choose the file then again press enter to publish the file , thats it .
 - URL : sihambintahabib-assairment.surge.sh 
+gemini prompt : generate code for this part in html and css tailwind responsive
