@@ -32,7 +32,7 @@ var handleprices = (e) => {
 var showprice = (prices) => {
     pricelist.innerHTML = "";
     totalprice.innerHTML = '';
-
+    let total = 0;
     prices.forEach(price => {
         pricelist.innerHTML += `<li class="bg-white p-2 m-1 rounded-sm ">
             <p class="text-lg font-semibold ">${price.title}</p>
@@ -46,18 +46,18 @@ var showprice = (prices) => {
             </p>
           </li>  
             `
-       totalprice.innerHTML += `<span class="font-light text-sm ">${price.price}</span>`
-        var price_converter = Number(a)
-        console.log(a);
-        console.log(price_converter);
-        console.log(typeof(price_converter));
+        total += parseInt(price.price)
 
-        
-        })
+    
+
+
+    })
+    totalprice.innerHTML += `<span class="font-light text-sm ">${total}</span>`
+
 
     // prices.forEach(price => {
     //     // totalprice += price.price;
-        // totalprice.innerHTML += `<span class="font-light text-sm ">${price.price}</span>
+    // totalprice.innerHTML += `<span class="font-light text-sm ">${price.price}</span>
     //         `  })
 
 
