@@ -23,15 +23,6 @@
 </head>
 
 <body class="">
- 
-
-  <!-- max-w-7xl mx-auto -->
-
-  <!-- <a href="https://openapi.programming-hero.com/api/categories">home</a>
-<ul id="allCategories" >
-  <li >all catagories</li>
-  <li></li>
-</ul> -->
   <header class="">
     <nav class=" p-5 bg-green-500 | flex  gap-3 items-center justify-around text-center">
       <div>
@@ -57,14 +48,14 @@
       <!-- <img class="w-96 flex-1 " src="B12A06-Green-Earth/assets/hero-leaf2.png" alt="" srcset=""> -->
     </div>
   </header>
-  <!-- flex flex-grow justify-between -->
+  
   <main class=" bg-green-100 |   ">
 
-    <div class="main_heading pt-5 flex justify-center items-center hidden">
-      <!-- <h1 class=" text-center font-extrabold "> your cardsContainer </h1> -->
-      <!-- <span class="loading loading-bars loading-xl |"></span> -->
+    <div id="spinner" class="pt-5 flex  justify-center items-center hidden ">
       <span class="loading loading-spinner text-success"></span>
+<div id="hello">
 
+</div>
 
   
     </div>
@@ -143,6 +134,23 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, nesciun
       </div>
     </div>
   </main>
+
+  <!-- Open the modal using ID.showModal() method -->
+  <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+  <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+    <div class="modal-box ">
+      <div id="text" class="p-2 space-y-4 ">
+      <div class="modal-action">
+        <form method="dialog">
+          <button class="btn">Close</button>
+        </form>
+      </div>
+</div>
+    </div>
+  </dialog>
+
+
+
 </body>
 <script src="code.js"></script>
 
