@@ -63,4 +63,7 @@
 
 GitHub Repository : https://github.com/Sihambintahabib-ux/assairment-6.git
  <br> Live Link : http://sihambintahabib-assairment.surge.sh/
- 
+ ---
+ GitHub Repository : https://github.com/programming-hero-web-course-4/b12a6-green-earth2-Sihambintahabib-ux.git
+
+Live Link : http://sihambintahabib-assairment.surge.sh/
