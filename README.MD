@@ -55,15 +55,20 @@
 ### Explain template literals in ES6. How are they different from string concatenation?
 - provide a more powerful and flexible way to work with strings than traditional concatenation. They are enclosed by backticks (`) instead of single or double quotes.
 - syntax of writing function in template literals : `${}`
----
  
 
 <!-- questaing  -->
 <!-- ftp://192.168.1.5:2221 -->
+---
+ ### Personal git link :
 
-GitHub Repository : https://github.com/Sihambintahabib-ux/assairment-6.git
- <br> Live Link : http://sihambintahabib-assairment.surge.sh/
+ GitHub Repository : https://github.com/Sihambintahabib-ux/assairment-6.git
+ <br> 
+ Live Link : http://sihambintahabib-assairment.surge.sh/
+
  ---
- GitHub Repository : https://github.com/programming-hero-web-course-4/b12a6-green-earth2-Sihambintahabib-ux.git
 
-Live Link : http://sihambintahabib-assairment.surge.sh/
+ ### Progaming-Hero git link :
+
+ GitHub Repository : https://github.com/programming-hero-web-course-4/b12a6-green-earth2-Sihambintahabib-ux.git
+ <br>Live Link : http://sihambintahabib-assairment.surge.sh/
